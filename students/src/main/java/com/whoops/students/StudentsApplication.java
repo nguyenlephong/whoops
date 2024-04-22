@@ -1,5 +1,6 @@
 package com.whoops.students;
 
+import algo.search.LinearSearch;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -12,6 +13,12 @@ public class StudentsApplication {
 
 	public static void main(String[] args) {
 //		SpringApplication.run(StudentsApplication.class, args);
+
+		LinearSearch<Integer> linearSearch = new LinearSearch<>();
+		Integer[] arrList = {1, 2, 3, 4, 5, 6};
+		int find = linearSearch.searchLinearArray(arrList, 3);
+		System.out.println("Found index: " + find);
+
 		DSStack<String> dsStack = new DSStack<String>();
 		dsStack.push("Nguyen");
 		dsStack.push("Le");
