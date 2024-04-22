@@ -5,7 +5,7 @@ import java.util.EmptyStackException;
 import java.util.List;
 
 public class DSStack<T> {
-    private List<T> stack;
+    private final List<T> stack;
 
     public DSStack() {
         stack = new ArrayList<T>();
